@@ -1,0 +1,16 @@
+{
+  "name": "lsof-mac-fast",
+  "version": "0.1.0",
+  "description": "Fast lsof for regular files on Mac OS X",
+  "main": "index.js",
+  "keywords": [
+    "lsof",
+    "mac"
+  ],
+  "author": "Jiri Zuna <jiri@zunovi.cz>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zuzkins/lsof-mac-fast"
+  }
+}
