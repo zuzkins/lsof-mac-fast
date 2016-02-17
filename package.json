@@ -1,6 +1,6 @@
 {
   "name": "lsof-mac-fast",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Fast lsof for regular files on Mac OS X",
   "main": "index.js",
   "keywords": [

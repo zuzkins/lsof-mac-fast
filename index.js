@@ -5,13 +5,15 @@ var path = require('path'),
     child = require("child_process");
 
 
-module.exports = lsofMacFast;
 
-function lsofMacFast(files, cb) {
+exports.lsof = function(files, cb) {
+    files = files || [];
+    cb = cb || function(err, stdout, stderr) {};
     if (process.platform !== 'darwin') {
 	cb('Unuspported platform. Only Mac OS is supported.', null, null);
 	return null;
     } else {
 	child.execFile(fastLsofBinary, files, {maxBuffer: 4*1024*1024}, cb);
+	return null;
     }
 }

@@ -9,7 +9,7 @@ is tiny nodejs wrapper around altered version of `lsof` binary included in Mac O
 Then you can use it like this:
 
 ```
-var lsof = require('lsof-mac-fast');
+var fastLsof = require('lsof-mac-fast');
 var filesToCheck = ['/tmp/doc.docx', '/tmp/sheet.xlsx']; // or [] to analyze all file descriptors currently open
-lsof(filesToCheck, function(err, stdout, stderr) { ... do something useful with the result ... })
+fastLsof.lsof(filesToCheck, function(err, stdout, stderr) { ... do something useful with the result ... })
 ```
